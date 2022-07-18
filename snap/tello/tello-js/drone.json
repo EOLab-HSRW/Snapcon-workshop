@@ -1,0 +1,13 @@
+{
+    "host": "0.0.0.0",
+    "drone": {
+        "ip": "10.180.100.106",
+        "controlPort": 8889,
+        "statePort": 8890,
+        "videoPort": 11111
+    },
+    "videoServer": {
+        "ip": "0.0.0.0",
+        "port": 3000
+    }
+}
