@@ -27,8 +27,26 @@ Run [`python/Classification.py`](python/Classification.py) in Nvidia Jetson.
 python3 python/Classification.py
 ```
 > **note**:  If it is the first time running the program, please wait couple of minutes for TensorRT to finish optimizing the network. <br/>
-### Snap!
+#### Snap!
 Open  [`snap/Snap!_with_classification.xml`](snap/Snap!_with_classification.xml) with Snap!.
 > **note**: Please use offline version of Snap! with Google Chrome browser to avoid any malfunction. <br/>
 
-Write down your Nvidia Jetson ip adress as input for connect block **< ws://ip_address:4040 >**.
+Write down your Nvidia Jetson ip adress as input for `connect block` **< ws://ip_address:4040 >**.
+  ![connect_block](/assests/Snap!/connect_block.png)
+> **note**: You can use `ifconfig` command in Nvidia Jetson to obtain ip address. <br/>
+
+### Object detection
+Run python websocket server in Nvidia Jetson and open object detection program in Snap!.
+#### Nvidia Jetson
+Run [`python/Detection.py`](python/Detection.py) in Nvidia Jetson.
+``` bash
+python3 python/Detection.py
+```
+> **note**:  If it is the first time running the program, please wait couple of minutes for TensorRT to finish optimizing the network. <br/>
+#### Snap!
+Open  [`snap/Snap!_with_detection.xml`](snap/Snap!_with_detection.xml) with Snap!.
+> **note**: Please use offline version of Snap! with Google Chrome browser to avoid any malfunction. <br/>
+
+Write down your Nvidia Jetson ip adress as input for `connect block` **< ws://ip_address:4040 >**.
+  ![connect_block](/assests/Snap!/connect_block.png)
+> **note**: You can use `ifconfig` command in Nvidia Jetson to obtain ip address. <br/>
