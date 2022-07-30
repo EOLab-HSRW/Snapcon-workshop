@@ -3,7 +3,7 @@
 sudo xhost +si:localuser:root
 
 sudo docker run -it \
-    --rm \
+    --restart always \
     --runtime nvidia \
     --security-opt  seccomp=unconfined \
     --network host \
@@ -14,4 +14,5 @@ sudo docker run -it \
     -v $PWD/snap:/jetson-inference/snapcon/snap \
     --device /dev/video0 \
     --device /dev/video1 \
+    --name container_snapcon \
     snapcon-workshop:heidelberg
