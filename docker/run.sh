@@ -13,6 +13,5 @@ sudo docker run -it \
     -v $PWD/python:/jetson-inference/snapcon/python \
     -v $PWD/snap:/jetson-inference/snapcon/snap \
     --device /dev/video0 \
-    --device /dev/video1 \
     --name container_snapcon \
     snapcon-workshop:heidelberg

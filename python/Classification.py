@@ -45,7 +45,7 @@ async def process(websocket,path):
 
 
 async def main ():
-	async with websockets.serve(process, "0.0.0.0", 4040):
+	async with websockets.serve(process, "0.0.0.0", 4040, ping_interval = None):
 		await asyncio.Future()
 
 loop = asyncio.get_event_loop()
